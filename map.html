@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=UTF-8>
+<title>MAP-KISAN MUNCH</title>
+<style type="text/css">
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+	background-image:url("2.jpg");
+    background-size:cover;
+}
+#i1{
+	margin-left:47%;
+}
+#dropmenu a{
+	color:white;
+}
+#dropmenu{
+	margin-left:370px;
+	width:1000px;
+}
+#dropmenu ul{
+	list-style:none;
+	
+}
+#dropmenu ul li{
+	width:150px;
+	height:50px;
+	background-color:#3C3E94;
+	border:1px solid white;
+	text-align:center;
+	float:left;
+	color:white;
+	font-size:20px;
+    line-height:50px;
+}
+#dropmenu ul li:hover{
+	background-color:#388222;
+}
+#dropmenu ul ul{
+	display:none;
+}
+#dropmenu ul li:hover>ul{
+	display:block;
+}
+img{
+	margin-left:150px;
+	margin-top:60px;
+}
+</style>
+</head>
+<body >
+<header link="white">
+<img id="i1" src="logo.jpg" alt="logo" width="100px" height="100px">
+<h1 align="center">KISAN मंच</h1><br><br><br>
+<nav>
+<div id="dropmenu" valign="center">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="support.html">Support</a></li>
+<li><u>Services</u>
+<ul>
+<li><a href="forum.html">Forum</a></li>
+<li><a href="map.html">Map</a></li>
+<li><a href="pre.html">Prediction</a></li>
+<li><a href="chat.html">Chatbox</a></li>
+</ul></li>
+<li><input type="text" size="15"><img src="search.png" width="25px" height="15px" alt="search"></li>
+</ul>
+</div>
+</nav>
+</header>
+<br><br><br>
+<img id ="mapofindia" img src="indialarge.jpg" usemap="#image-map" >
+
+<map name="image-map">
+    <area target="_blank" alt="Maharashtra" title="Maharashtra" href="Maharashtra.html" coords="329,869,92" shape="circle">
+    <area target="_blank" alt="Tamil Nadu" title="Tamil Nadu" href="TamilNadu.html" coords="451,1286,75" shape="circle">
+    <area target="_blank" alt="Rajasthan" title="Rajasthan" href="Rajasthan.html" coords="264,518,120" shape="circle">
+</map>
+<script type="text/javascript">
+document.write(document.getElementById("mapofindia").usemap)
+</script>
+</body>
+</html>
